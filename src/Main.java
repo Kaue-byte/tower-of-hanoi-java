@@ -50,11 +50,14 @@ public class Main {
                     break;
 
                 case 3:
-                    jogo.restart();
+                    System.out.print("Nova quantidade de discos: ");
+                    n = sc.nextInt();
+
+                    jogo = new JogoHanoi(n);
                     jogo.setTorre();
+
                     System.out.println("Jogo reiniciado.");
                     break;
-
                 case 4:
                     System.out.println("Saindo...");
                     break;
